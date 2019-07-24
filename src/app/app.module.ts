@@ -12,9 +12,13 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { TripsService } from './trips.service';
+
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRouterModule ],
   declarations: [ AppComponent, HelloComponent, DashboardComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ TripsService ]
 })
 export class AppModule { }
